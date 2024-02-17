@@ -1,0 +1,30 @@
+Aboreto
+Allura
+Amita
+Cinzel Decorative
+
+ #container-pagina{
+       display:grid;
+       grid-column-gap:10px;
+       grid-row-gap:10px;
+       grid-template-areas: "home home home home home"
+                            "noutati noutati noutati noutati anunturi"
+                            "noutati noutati noutati noutati orar"
+                            "galerie galerie galerie galerie galerie";
+       }
+       #home{grid-area:home;}
+       #noutati{grid-area:noutati;}
+       #anunturi{grid-area:anunturi;}
+       #orar{grid-area:orar;}
+       #galerie{grid-area:galerie;}
+       
+       #noutati {display:flex;
+                 flex-direction:column;
+                 }       
+       #noutati > article:nth-of-type(1)>img{float:right;
+                                             margin-left:3%;
+       
+       }
+       #noutati > article:nth-of-type(2)>img{float:left;
+                                             margin-right:3%;
+                                            }

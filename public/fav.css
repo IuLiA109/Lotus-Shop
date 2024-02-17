@@ -1,0 +1,72 @@
+body{
+    background-color:white;
+    margin:0;
+    }
+
+header
+   {height:100px; 
+    background:white;
+  background-image: linear-gradient(rgba(255,102,204,1),rgba(255,255,204,1),rgba(44,224,31,1));
+}
+
+h1{
+font-size:50px;
+margin:0;
+padding-top:15px;
+text-align:center;
+
+  }
+
+  .butoane{
+    text-align: center;
+  }
+
+  .plus{
+    width: 50px;
+    height: 20px;
+  }
+  .minus{
+    width: 50px;
+    height: 20px;
+  }
+
+  /* .container{
+    height: 30%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgb(0, 0, 0);
+  } */
+
+  .container>h2{
+    font-family: "Neue-Helvetica";
+    text-align: center;
+    font-size: 25px;
+  }
+  .container>h3{
+    font-family: "Neue-Helvetica";
+    /* margin: 20px; */
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .mesaj{
+    margin: 20px;
+  }
+
+
+  .imgfav{
+    width: 250px;
+    height:300px;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+
+
+
+

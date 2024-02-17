@@ -1,0 +1,237 @@
+	body{
+            background-color:white;
+            margin:0;
+            }
+   
+       header
+           {height:100px; 
+            background:white;
+  	    background-image: linear-gradient(rgba(255,102,204,1),rgba(255,255,204,1),rgba(44,224,31,1));
+	}
+       
+       h1{
+        font-size:50px;
+        margin:0;
+        padding-top:15px;
+        text-align:center;
+  	
+          }
+
+        .bag{
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 25px;
+        }
+
+        .fav{
+          position: absolute;
+          top: 8px;
+          right: 48px;
+          font-size: 25px;
+        }
+
+        .cont{
+          position: absolute;
+          top: 8px;
+          right: 80px;
+          font-size: 25px;
+        }
+
+        header > a{
+          color:rgb(70, 70, 70);
+          text-decoration: none;
+          /* padding: 50px; */
+        }
+        
+        header > a:hover{
+          color: black;
+        }
+
+        /* meniul*/
+       
+       nav {
+       width:100%;
+       height:2rem;
+       background-color:white;
+}
+
+       nav ul li a {
+  	text-decoration:none;
+  	color:black;
+   	font-size:1rem;
+   	display:block;
+        height:100%;
+        width:100%;
+   }
+      nav ul {
+  	list-style-type:none;
+  	margin:0;
+  	padding:0;
+ }
+
+  nav li {margin:0;
+         padding:0;}
+         
+  nav > ul.meniu{
+        display:flex;
+        justify-content:space-around;
+        text-align:center;
+}
+
+  nav > ul.meniu  li{
+        flex-grow:1;
+        border:1px solid rgb(0, 0, 0);
+        height:2rem;
+        width:100%;
+        line-height:2rem;
+	      background-color:white;
+        position:relative;
+        z-index:10;
+                }
+
+  nav > ul.meniu > li > ul.submeniu {visibility:hidden;}
+  nav > ul.meniu > li:hover > ul.submeniu {
+	visibility:visible; 
+	width:100%; 
+	}
+  nav > ul.meniu  a:hover  {
+	transition: background-image 3s; 
+	background-image: linear-gradient(rgba(44,224,31,0.2), rgba(255,51,204,0.2));
+	}
+
+            /* animatie imagini  */
+
+  #imagini{
+    position:relative;
+    height:750px;
+    width:100%;
+    margin:0 auto;
+  }
+       
+  #imagini> img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width:100%; height: 100%; */
+
+    position:absolute;
+    left:0;
+    animation-name: imaginiFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+  }    
+
+  @keyframes imaginiFadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  #imagini> img:nth-of-type(1) {
+    animation-delay: 9s;
+  }
+  #imagini> img:nth-of-type(2) {
+    animation-delay: 6s;
+  }
+  #imagini> img:nth-of-type(3) {
+    animation-delay: 3s;
+  }
+  /* #imagini> img:nth-of-type(4) {
+    animation-delay: 0;
+  } */
+
+  
+#contact > h4{
+  margin:0;
+	text-align:center;
+}
+
+/* tranzitie */
+
+.trans>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  transition: width 1s, height 1s, transform 3s;
+}
+
+.trans>figcaption{
+  font-size:10px;
+  display: flex;
+  justify-content: center;
+  transition: width 1s, height 1s, transform 3s;
+}
+
+.trans>img:hover {
+  width: 250px;
+  height: 250px;
+  transform: rotate(360deg);
+}
+
+/* social media icons */
+
+.social{
+  /* padding: 50px ; */
+  /* text-align: center; */
+  font-size:14px;
+  display: flex;
+  justify-content: center;
+}
+
+.social > a{
+  /* border:1px solid black; */
+  color:darkgrey;
+  text-decoration: none;
+  margin: 50px;
+}
+
+.social > a:hover{
+  color: black;
+}
+    
+        @media screen and (max-width:800px){
+        
+            .social> a:nth-of-type(4)::before{
+              content: '\A'; 
+              white-space: pre-wrap;
+            }
+            .social> a:nth-of-type(5)::before{
+              content: '\A'; 
+              white-space: pre-wrap;
+            }
+
+            /* .ult{
+              display: flex;
+              justify-content: space-between;
+            } */
+
+            .social> a:nth-of-type(4){
+                position: absolute;
+                text-align: center;
+                margin-right: 210px;
+            }
+
+            .social> a:nth-of-type(5){
+              position: absolute;
+              text-align: center;
+              margin-left: 260px;
+          }
+
+        }
+
